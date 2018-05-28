@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MyProfileFragment">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/gray">
+        <ImageView
+            android:id="@+id/image_view_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_profile_image"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="1dp"
+            tools:src="@drawable/mada" />
+        <!--Add 1dp bottom padding to remove weird flickering while animating-->
+
+        <View
+            android:id="@+id/view_avatar_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_profile_image"/>
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image_view_avatar"
+            tools:text="Sizura"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:textColor="@color/orange"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_name"
+            tools:text="@string/mada" />
+
+    </RelativeLayout>
+
+</FrameLayout>

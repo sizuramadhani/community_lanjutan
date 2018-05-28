@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    Cara membuat folder menu_toolbar :
+    1. klik kanan folder 'res'
+    2. pilih 'New' - 'Android resource directory'
+    3. Set Directory nama:'menu_toolbar' dan Resource type : 'menu_toolbar'
+
+    Cara membuat file menu_toolbar.xmllbar.xml
+    1. Klik kanan pada folder 'menu_toolbar'
+    2. Pilih 'New' - 'Menu resource file'
+    3. Set File name 'menu_toolbar' dan Source set  'menu_toolbar'
+    -->
+    <item android:title="Item"
+        android:id="@+id/mn_search"
+        app:showAsAction="always"
+        android:visible="false"
+        android:icon="@drawable/ic_chrome_reader_mode_black_24dp"/>
+
+    <item
+        android:id="@+id/profil"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Profil"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/pengaturan"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="Pengaturan"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/bantuan"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Bantuan"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/tentang"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Tentang"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="Keluar"
+        app:showAsAction="never"/>
+
+
+</menu>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Community</string>
+    <string name="fragment_login_password_hint">inputkan password</string>
+    <string name="fragment_login_passfiword_hintcon">inputkan password confirm</string>
+    <string name="url_api_waether">http://query.yahooapis.com/</string>
+    <string name="cdn_url">http://cdn.img.print.kompas.com/mudik/</string>
+
+    <string name="loading">lagi loading</string>
+    <string name="title_activity_makanan">MakananActivity</string>
+    <string name="three">three</string>
+    <string name="one">one</string>
+    <string name="two">two</string>
+    <string name="andi">i am a Mobile Developer and Trainer Android Mobile Apps with more than two years’ experience gained in Java development and IT</string>
+    <string name="mada">i am a Developer Student at IDN with more than one years’ experience gained in Java development and IT</string>
+    <string-array name="array_names">
+        <item>"Iswandi Saputra"</item>
+        <item>"Ramadhani zuriyah"</item>
+        <item>"Dmitriy Dovbnya"</item>
+        <item>"Dmitry Denisenko"</item>
+        <item>"Eduard Baev"</item>
+        <item>"Iliya Bershadskiy"</item>
+        <item>"Kirill Penzykov"</item>
+        <item>"Konstantin Rudenko"</item>
+        <item>"Oleksii Shliama"</item>
+        <item>"Pavel Apisov"</item>
+        <item>"Vadim Ooleynik"</item>
+    </string-array>
+    <string name="diminta">Diminta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map_sub_komunitas">Map</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/bgSplash"
+    android:layout_height="wrap_content">
+
+    <!--
+    Klik kanan layout - New - Layout Resources file
+    -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:layout_margin="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/andi"
+                android:id="@+id/logo"
+                android:visibility="gone"
+                android:padding="2dp"
+                android:layout_marginRight="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Nama Daerah"
+                android:id="@+id/namaDaerah"
+                android:textSize="23dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/logo"
+                android:layout_toEndOf="@+id/logo"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="0"
+                android:layout_marginRight="30dp"
+                android:id="@+id/provinsiDaerah"
+                android:layout_marginTop="2dp"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:textStyle="italic"
+                android:layout_toRightOf="@+id/logo"
+                android:layout_below="@+id/namaDaerah" />
+
+            <TextView
+                android:id="@+id/idDaerah"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/provinsiDaerah"
+                android:text="0"
+                android:visibility="invisible"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="40dp"
+                android:visibility="gone"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true" />
+
+            <!-- Rightend Arrow -->
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="24dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

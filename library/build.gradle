@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    packagingOptions {
+        // Exclude file to avoid
+        // Error: Duplicate files during packaging of APK
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    maven {
+        url "https://www.jitpack.io"
+    }
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.github.ozodrukh:CircularReveal:1.0.5@aar'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.nhaarman.listviewanimations:lib-core:3.1.0@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+}

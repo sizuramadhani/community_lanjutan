@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_dua">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl"
+        android:layout_below="@+id/rl_dua"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            >
+
+            <EditText
+                android:id="@+id/regUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Username"
+                android:layout_marginTop="20dp"
+                />
+
+            <EditText
+                android:id="@+id/regPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/regAdmin"
+                    android:layout_weight="1"
+                    android:checked="true"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:layout_weight="1"
+                    android:id="@+id/regUserbiasa"
+                    android:checked="false"/>
+            </RadioGroup>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/regBtnLogin"
+                android:background="@drawable/my_bg"
+                android:text="Login"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/regBtnRegister"
+                android:gravity="right|center"
+                android:text="Register!!"
+                android:textStyle="italic"
+                android:layout_marginTop="10dp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+       </RelativeLayout>
+</ScrollView>
